@@ -1,110 +1,24 @@
-Tadarus Tutor
+# Tadarus Tutor v2.0 (Modular)
 
-Tadarus Tutor adalah platform kursus Alquran berbasis mahasiswa UIN sebagai pengajar. Website ini dirancang untuk mempertemukan murid dengan tutor yang memiliki kompetensi tahsin, tahfidz, bahasa Arab, dan sanad.
+Platform edukasi Alquran berbasis web dengan arsitektur Vanilla JS Modular.
 
-Tujuan Proyek
+## Struktur Folder
+- `assets/css/`: File styling (CSS Variables)
+- `assets/js/modules/`: Logika bisnis modular (Router, State, Components)
+- `assets/js/app.js`: Entry point
 
-Membangun platform belajar Alquran yang terstruktur dan profesional
+## Cara Deploy ke GitHub Pages
+1. Buat repositori baru di GitHub.
+2. Push seluruh file ini ke branch `main`.
+3. Masuk ke **Settings > Pages**.
+4. Pilih Source: **Deploy from a branch**, Branch: **main**, Folder: **/(root)**.
+5. Simpan. Website akan tersedia di `https://username.github.io/repository/`.
 
-Memberdayakan mahasiswa UIN sebagai tutor
+## Cara Menambah Tutor Baru
+Buka file `assets/js/modules/state.js` dan tambahkan objek baru ke dalam array `tutors`.
 
-Menyediakan sistem pencarian tutor yang mudah
-
-Mengembangkan sistem kursus berbasis digital
-
-Fitur Utama
-
-Halaman utama dengan informasi platform
-
-Daftar tutor dengan sistem filter
-
-Detail profil tutor
-
-Paket harga pembelajaran
-
-Halaman ebook dan video materi
-
-Form pendaftaran tutor
-
-Sistem navigasi berbasis hash routing
-
-Desain responsif untuk desktop dan mobile
-
-Struktur Folder
-
-index.html
-404.html
-assets/css/style.css
-assets/js/app.js
-assets/js/modules/
-assets/images/
-
-Teknologi yang Digunakan
-
-HTML5
-
-CSS3
-
-Vanilla JavaScript ES6
-
-Modular structure
-
-Hash based routing
-
-GitHub Pages untuk hosting
-
-Cara Menjalankan Secara Lokal
-
-Download atau clone repository ini
-
-Buka file index.html di browser
-
-Tidak memerlukan server atau instalasi tambahan
-
-Cara Deploy ke GitHub Pages
-
-Masuk ke repository
-
-Buka Settings
-
-Pilih menu Pages
-
-Pada bagian Source pilih branch main
-
-Pilih folder root
-
-Klik Save
-
-Website akan aktif di URL:
-https://username.github.io/nama-repository/
-
-Cara Menambahkan Tutor Baru
-
-Buka file data tutor di folder assets/js/modules
-
-Tambahkan object tutor baru sesuai format yang tersedia
-
-Commit dan push perubahan
-
-Website akan otomatis terupdate
-
-Rencana Pengembangan
-
-Dashboard murid dan tutor
-
-Integrasi database Google Sheets
-
-Sistem rating dan review
-
-Sistem booking otomatis
-
-Integrasi pembayaran
-
-Status Proyek
-
-Sedang dalam tahap pengembangan aktif.
-
-Pengembang
-
-Tadarus Tutor Team
-Mahasiswa UIN
+## Keunggulan Teknis
+- **Zero Dependencies**: Tanpa framework eksternal.
+- **SEO Friendly**: Dilengkapi meta tag dan struktur semantic.
+- **Fast Loading**: Menggunakan lazy loading gambar dan ES Modules.
+- **Hash-based Routing**: Mencegah error 404 pada navigasi internal di GitHub Pages.
